@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="863.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="FXMLDocumentController">
+   <children>
+      <DatePicker layoutX="22.0" layoutY="148.0" styleClass="navbutton" stylesheets="@dashboard.css" />
+      <ComboBox layoutX="22.0" layoutY="186.0" prefHeight="26.0" prefWidth="175.0" styleClass="navbutton" stylesheets="@dashboard.css" />
+      <Button fx:id="controleE" layoutX="22.0" layoutY="223.0" mnemonicParsing="false" onAction="#ChangerpageE" styleClass="navbutton" stylesheets="@dashboard.css" text="controlle" />
+      <Button layoutX="84.0" layoutY="223.0" mnemonicParsing="false" styleClass="navbutton" text="Button">
+         <stylesheets>
+            <URL value="@../../../linda/demo1/src/main/resources/com/example/demo1/dashboard.css" />
+            <URL value="@dashboard.css" />
+         </stylesheets>
+      </Button>
+      <Button layoutX="145.0" layoutY="223.0" mnemonicParsing="false" styleClass="navbutton" stylesheets="@dashboard.css" text="Button" />
+      <AnchorPane layoutX="214.0" layoutY="14.0" prefHeight="536.0" prefWidth="638.0">
+         <children>
+            <Label layoutX="14.0" layoutY="159.0" prefHeight="62.0" prefWidth="175.0" text="Label">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold Italic" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

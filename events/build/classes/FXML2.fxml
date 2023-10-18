@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="808.0" stylesheets="@dashboard.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="FXML2Controller">
+   <children>
+      <TextField fx:id="textfield_ajout_name" layoutX="39.0" layoutY="100.0" prefHeight="17.0" prefWidth="175.0" styleClass="label-record-design" stylesheets="@dashboard.css" />
+      <DatePicker fx:id="date_picker_ajout" layoutX="39.0" layoutY="179.0" styleClass="chart-Button" stylesheets="@dashboard.css" />
+      <TextField fx:id="textfield_ajout_price" layoutX="39.0" layoutY="141.0" prefHeight="17.0" prefWidth="175.0" styleClass="label-record-design" stylesheets="@dashboard.css" />
+      <TextArea fx:id="text_field_discription_ajout" layoutX="39.0" layoutY="211.0" prefHeight="109.0" prefWidth="175.0" styleClass="textfield-record-design" stylesheets="@dashboard.css" />
+      <TextField fx:id="textfield_ajout_image" layoutX="39.0" layoutY="333.0" prefHeight="17.0" prefWidth="175.0" styleClass="label-record-design" stylesheets="@dashboard.css" />
+      <Button fx:id="ajouterE" layoutX="39.0" layoutY="386.0" mnemonicParsing="false" onAction="#activateAjouterE" prefHeight="26.0" prefWidth="71.0" styleClass="navbutton" stylesheets="@dashboard.css" text="ajouter" />
+      <TextField fx:id="textfield_modifier_name" layoutX="265.0" layoutY="141.0" prefHeight="17.0" prefWidth="175.0" styleClass="label-record-design" stylesheets="@dashboard.css" />
+      <TextField fx:id="textfield_modifier_price" layoutX="265.0" layoutY="178.0" prefHeight="17.0" prefWidth="175.0" styleClass="label-record-design" stylesheets="@dashboard.css" />
+      <DatePicker fx:id="date_picker_modifier" layoutX="265.0" layoutY="218.0" styleClass="chart-Button" stylesheets="@dashboard.css" />
+      <TextField fx:id="textfield_modifier_id" layoutX="265.0" layoutY="100.0" prefHeight="17.0" prefWidth="175.0" styleClass="label-record-design" stylesheets="@dashboard.css" />
+      <TextArea fx:id="text_field_discription_modifier" layoutX="265.0" layoutY="266.0" prefHeight="109.0" prefWidth="175.0" styleClass="textfield-record-design" stylesheets="@dashboard.css" />
+      <TextField fx:id="textfield_modifier_image" layoutX="265.0" layoutY="385.0" prefHeight="17.0" prefWidth="175.0" styleClass="label-record-design" stylesheets="@dashboard.css" />
+      <Button fx:id="modifierE" layoutX="265.0" layoutY="429.0" mnemonicParsing="false" onAction="#activatemodifierE" prefHeight="26.0" prefWidth="71.0" styleClass="navbutton" stylesheets="@dashboard.css" text="modifier" />
+      <Button fx:id="supprimerE" layoutX="353.0" layoutY="429.0" mnemonicParsing="false" onAction="#ActivateSupprimerE" prefHeight="26.0" prefWidth="71.0" styleClass="navbutton" stylesheets="@dashboard.css" text="supprimer" />
+      <Button fx:id="supprimerE1" layoutX="695.0" layoutY="429.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" styleClass="navbutton" stylesheets="@dashboard.css" text="Back" />
+      <Line endX="2.5999755859375" endY="443.5999755859375" layoutX="235.0" layoutY="58.0" startX="2.5999755859375" startY="-27.599994659423828" />
+   </children>
+</AnchorPane>
