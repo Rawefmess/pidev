@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="850.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resources.AjoutstationController">
+    <stylesheets>
+        <URL value="@ajoutstation.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="492.0" prefWidth="162.0" styleClass="navbar" stylesheets="@ajoutstation.css">
+         <children>
+            <Circle fill="#475059" layoutX="81.0" layoutY="81.0" radius="60.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fill="WHITE" layoutX="44.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!" wrappingWidth="87.38632202148438">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="8.0" layoutY="188.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="145.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="           Home" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="227.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="145.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="       Reservation" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="266.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="145.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="            Event" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="305.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="145.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="            Shop" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="344.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="145.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="           Station" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="383.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="145.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="          Support" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="422.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="145.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="          Logout" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="162.0" layoutY="44.0" prefHeight="92.0" prefWidth="706.0" styleClass="card-top" stylesheets="@ajoutstation.css">
+         <children>
+            <ImageView fitHeight="92.0" fitWidth="291.0" layoutX="210.0">
+               <image>
+                  <Image url="@../../../../../Downloads/380417705_703858877758211_884682150734971159_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="162.0" prefHeight="44.0" prefWidth="698.0">
+         <children>
+            <Button fx:id="exit" layoutX="656.0" layoutY="9.0" mnemonicParsing="false" onAction="#exit" styleClass="exit" stylesheets="@ajoutstation.css" text="exit" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="162.0" layoutY="136.0" prefHeight="356.0" prefWidth="606.0">
+         <children>
+            <AnchorPane fx:id="map0" layoutX="-1.0" prefHeight="356.0" prefWidth="706.0">
+               <children>
+                  <Button fx:id="confirmerstation" layoutX="487.0" layoutY="285.0" mnemonicParsing="false" onAction="#changepage" styleClass="logout-button" stylesheets="@ajoutstation.css" text="Confirmer" />
+                  <TableView fx:id="table" layoutX="345.0" layoutY="14.0" prefHeight="258.0" prefWidth="329.0" styleClass="textfield-record-design" stylesheets="@ajoutstation.css">
+                    <columns>
+                        <TableColumn fx:id="id_col" prefWidth="81.5999755859375" text="id " />
+                      <TableColumn fx:id="nom_col" prefWidth="108.0" text="nom" />
+                        <TableColumn fx:id="emplacement_col" prefWidth="138.4000244140625" text="emplacement" />
+                    </columns>
+                  </TableView>
+                  <Text fill="#9c0469" layoutX="67.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom:" wrappingWidth="54.6058349609375">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#9c0469" layoutX="23.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emplacement:">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="nomstation" layoutX="152.0" layoutY="48.0" styleClass="label-record-design" stylesheets="@ajoutstation.css" />
+                  <TextField fx:id="emplacementstation" layoutX="152.0" layoutY="103.0" styleClass="label-record-design" stylesheets="@ajoutstation.css" />
+                  <Button fx:id="ajoutajout" layoutX="50.0" layoutY="178.0" mnemonicParsing="false" onAction="#SEND" styleClass="navbutton" stylesheets="@ajoutstation.css" text="Ajout">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="modifiermodifier" layoutX="133.0" layoutY="178.0" mnemonicParsing="false" styleClass="navbutton" stylesheets="@ajoutstation.css" text="Modifier">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="supprimersupprimer" layoutX="227.0" layoutY="178.0" mnemonicParsing="false" styleClass="navbutton" stylesheets="@ajoutstation.css" text="Supprimer">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="map" layoutX="-1.0" prefHeight="356.0" prefWidth="706.0" visible="false">
+               <children>
+                  <Text fill="#a1117d" layoutX="58.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des vélos:" wrappingWidth="145.60000000000002">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="24.0" layoutY="68.0" prefHeight="258.0" prefWidth="214.0" styleClass="label-record-design" stylesheets="@ajoutstation.css" />
+                  <Text fill="#a1117d" layoutX="466.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emplacement:" wrappingWidth="120.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="backstation" layoutX="327.0" layoutY="301.0" mnemonicParsing="false" onAction="#changepage" prefHeight="26.0" prefWidth="71.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="   Back">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
