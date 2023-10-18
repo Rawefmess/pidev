@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybike.HelloController">
+   <children>
+      <AnchorPane prefHeight="599.0" prefWidth="200.0" styleClass="navbar" stylesheets="@dashboard.css">
+         <children>
+            <Circle fill="#535c63" layoutX="98.0" layoutY="94.0" radius="80.0" smooth="false" stroke="#403b3b" strokeType="INSIDE" strokeWidth="0.0" />
+            <Text fill="#faf9f9" layoutX="48.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!" wrappingWidth="103.38632202148438">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Button layoutX="14.0" layoutY="210.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Home" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button layoutX="14.0" layoutY="260.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Reservation" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Event" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Shop" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="412.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Maintenance" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="16.0" layoutY="460.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Support" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="16.0" layoutY="508.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Logout" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <AnchorPane layoutX="198.0" layoutY="46.0" prefHeight="85.0" prefWidth="802.0" styleClass="navbar" stylesheets="@dashboard.css">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="200.0" layoutX="318.0" layoutY="-1.0">
+               <image>
+                  <Image url="C:\Users\houss\Desktop\MyBike\src\main\resources\com\example\mybike\rawef.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="page1" layoutX="198.0" layoutY="152.0" prefHeight="454.0" prefWidth="802.0">
+         <children>
+            <AnchorPane layoutX="289.0" layoutY="79.0" prefHeight="250.0" prefWidth="243.0" styleClass="textfield-record-design" stylesheets="@dashboard.css">
+               <children>
+                  <Button fx:id="reserver2" layoutX="33.0" layoutY="196.0" mnemonicParsing="false" onAction="#changepages" prefHeight="40.0" prefWidth="151.0" styleClass="showChart-Button1" stylesheets="@dashboard.css" text="Réserver" />
+                  <ImageView fitHeight="143.0" fitWidth="151.0" layoutX="50.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\Users\houss\Desktop\MyBike\src\main\resources\com\example\mybike\[removal.ai]_07a2a912-7fe8-48e4-b34b-6103bcac7501-telechargement-1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="6.0" layoutY="125.0" text="Description" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="27.0" layoutY="79.0" prefHeight="250.0" prefWidth="243.0" styleClass="textfield-record-design" stylesheets="@dashboard.css">
+               <children>
+                  <Button fx:id="reserver1" layoutX="33.0" layoutY="196.0" mnemonicParsing="false" onAction="#changepages" prefHeight="40.0" prefWidth="151.0" styleClass="showChart-Button1" stylesheets="@dashboard.css" text="Réserver" />
+                  <ImageView fx:id="lalou" fitHeight="133.0" fitWidth="151.0" layoutX="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\Users\houss\Desktop\MyBike\src\main\resources\com\example\mybike\[removal.ai]_769f8194-a463-4ed8-9954-2fef2f25884e-telechargement-2.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="description_label" layoutX="6.0" layoutY="125.0" text="Description" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="544.0" layoutY="79.0" prefHeight="250.0" prefWidth="243.0" styleClass="textfield-record-design" stylesheets="@dashboard.css">
+               <children>
+                  <Button fx:id="reserver3" layoutX="33.0" layoutY="196.0" mnemonicParsing="false" onAction="#changepages" prefHeight="40.0" prefWidth="151.0" styleClass="showChart-Button1" stylesheets="@dashboard.css" text="Réserver" />
+                  <ImageView fitHeight="133.0" fitWidth="143.0" layoutX="56.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\Users\houss\Desktop\MyBike\src\main\resources\com\example\mybike\[removal.ai]_b26761dd-64e2-48c4-8bbd-725605b6f72d-telechargement.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="6.0" layoutY="125.0" text="Description" />
+               </children>
+            </AnchorPane>
+            <Hyperlink layoutX="425.0" layoutY="375.0" text="--&gt;" />
+            <Hyperlink layoutX="403.0" layoutY="375.0" text="1" />
+            <TextField layoutX="27.0" layoutY="22.0" promptText="Rechercher vélo" styleClass="textfield-design" stylesheets="@design.css" />
+            <Button layoutX="197.0" layoutY="23.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" styleClass="navbutton" stylesheets="@dashboard.css" text="Search" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="page2" layoutX="198.0" layoutY="152.0" prefHeight="446.0" prefWidth="802.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="409.0" layoutX="61.0" layoutY="14.0" stroke="#3e3b3b" strokeType="INSIDE" width="709.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="224.0" layoutX="87.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="221.0" />
+            <Label layoutX="497.0" layoutY="42.0" prefHeight="54.0" prefWidth="103.0" text="Label">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="453.0" layoutY="125.0" text="Station">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="416.0" layoutY="171.0" promptText="start date" styleClass="textfield-record-design" stylesheets="@dashboard.css" />
+            <DatePicker layoutX="416.0" layoutY="219.0" promptText="end date" styleClass="textfield-record-design" stylesheets="@dashboard.css" />
+            <Text layoutX="481.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix" wrappingWidth="56.799999999999955">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="472.0" layoutY="343.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="92.0" styleClass="navbutton" stylesheets="@dashboard.css" text="   Confirmer" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="955.0" layoutY="1.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="44.0" styleClass="exit" stylesheets="@dashboard.css" text="Exit" />
+   </children>
+</AnchorPane>
